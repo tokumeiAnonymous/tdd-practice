@@ -1,4 +1,4 @@
-export const analyzeArray = (arrayOfNumbers) => ({
+export const analyzeArray = (arrayOfNumbers) => Object.freeze({
   average:  (arrayOfNumbers.reduce((previous, current) => previous += current, 0)) / arrayOfNumbers.length,
   
   min: arrayOfNumbers.reduce((previous, current) => {
